@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui">
+ 
+<f:view contentType="text/html">
+    <h:head />
+    <h:body>
+        <h:form>
+            <p:panel id="panel1" header="SpringBootJoinFaces">
+                <h:outputText value="#{helloController.hello}" />         
+                <h:outputText value="Time: " />
+                <h:outputText value="#{helloController.timeStamp}" /><br/><br/>
+                <p:commandButton update="panel1" action="#{helloController.updateTime}" value="Hello JoinFaces" />  
+            </p:panel>
+        </h:form>
+    </h:body>
+</f:view>
+</html>
